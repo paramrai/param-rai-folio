@@ -6,22 +6,10 @@ const portfolioContainer = document.querySelector(".portfolios");
 
 const portfolios = [
   {
-    title: "Instagram replica",
-    img: "img/instagram.png",
-    github: "https://github.com/Param-rai/Instagram",
-    demo: "https://instagram-two-beta.vercel.app/",
-  },
-  {
-    title: "Mappin",
-    img: "img/mappin.png",
-    github: "https://github.com/Param-rai/Mappin",
-    demo: "https://mappin-pi.vercel.app/",
-  },
-  {
-    title: "prmMovies",
-    img: "img/prmMovies.png",
-    github: "https://github.com/Param-rai/prmMovies",
-    demo: "https://prm-movies.vercel.app/",
+    title: "Uber clone",
+    img: "img/uber_ss.png",
+    github: "https://github.com/paramrai/uberClone",
+    demo: "https://uber-clone-lake.vercel.app/",
   },
 ];
 
@@ -68,13 +56,6 @@ function PageTransition() {
     const id = e.target.dataset.id;
 
     if (id) {
-      // remove selected from the other button
-      // secBtn.forEach((btn) => {
-      //   btn.classList.remove("active");
-      // });
-
-      // e.target.classList.add("active");
-
       // hide other section
       sections.forEach((section) => {
         section.classList.remove("active");
