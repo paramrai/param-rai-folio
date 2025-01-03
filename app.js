@@ -11,6 +11,12 @@ const portfolios = [
     github: "https://github.com/paramrai/uberClone",
     demo: "https://uber-clone-lake.vercel.app/",
   },
+  {
+    title: "100+ Vanilla Js Projects",
+    img: "img/vanilla_js.png",
+    github: "https://github.com/paramrai/vanillaJs",
+    demo: "https://master-vanilla-js.vercel.app/",
+  },
 ];
 
 portfolios.forEach((portfolio, i) => {
