@@ -9,7 +9,7 @@ const portfolios = [
     title: "Uber clone",
     img: "img/uber_ss.png",
     github: "https://github.com/paramrai/uberClone",
-    demo: "https://uber-clone-lake.vercel.app/",
+    demo: "https://uber-clone-rho-lemon.vercel.app/",
   },
   {
     title: "100+ Vanilla Js Projects",
