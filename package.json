@@ -1,0 +1,16 @@
+{
+  "name": "param-rai-folio",
+  "version": "1.0.0",
+  "main": "app.js",
+ "scripts": {
+  "build-css": "sass styles:css",
+  "watch-css": "sass --watch styles:css"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.83.4"
+  }
+}

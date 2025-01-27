@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="css//styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="stylesheet"
@@ -37,7 +37,6 @@
       sizes="16x16"
       href="img/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
     <!-- ============ favicon =============== -->
 
     <title>Param rai</title>
@@ -54,22 +53,25 @@
         <div class="right-header">
           <h1 class="name">
             Hi,I'm <span>Param rai</span>
-            A Full Stack Web Developer
+            A Full Stack Engineer
           </h1>
           <p>
-            I am a mern stack developer with 2+ years of experience. I
-            specialize in developing web applications My portfolio showcases my
-            skills in various programming languages, frameworks, and
-            technologies. I have worked on projects for a variety of clients I
-            am passionate about creating innovative solutions that solve
-            real-world problems. If you are looking for a reliable and
-            experienced software developer, please take a look at my portfolio
-            to see what I can do for you. Thank you for your time!
+            I am a Full-Stack <strong>JavaScript Engineer</strong> with over 2
+            years of hands-on experience specializing in creating dynamic and
+            responsive web applications. My recent work demonstrates my
+            proficiency in various cutting-edge programming languages,
+            frameworks, and technologies, such as <strong>JavaScript</strong> ,
+            <strong>React</strong> , <strong>Node.js</strong> ,
+            <strong>Express</strong> , <strong>MongoDB</strong> , and
+            <strong>React Native</strong>. I am passionate about leveraging the
+            latest industry trends and best practices to build robust and
+            scalable applications. Please explore my recent work to see the
+            impact I can make. Thank you for your time!
           </p>
-          <div class="btn-con">
-            <a href="ParamResume.pdf" class="main-btn">
-              <span class="btn-text">Download CV</span>
-              <span class="btn-icon"><i class="fas fa-download"></i></span>
+          <div class="btn-con" onclick="handleWorkClick()">
+            <a class="main-btn" style="cursor: pointer">
+              <span class="btn-text">See Recent Work</span>
+              <span class="btn-icon"><i class="fas fa-briefcase"></i></span>
             </a>
           </div>
         </div>
@@ -85,17 +87,29 @@
           <div class="left-about">
             <h4>Information about me</h4>
             <p>
-              I am a passionate and motivated mern stack developer with a strong
-              background in developing web applications. I have experience in
-              both front-end and back-end development, as well as database
-              design and management. I am proficient in HTML, CSS, JavaScript,
-              React, MongoDB, Express.js, Node.js, and other web technologies. I
-              am always eager to learn new technologies and techniques to
-              improve my skillset.
+              I am a highly passionate and motivated
+              <strong> JavaScript Engineer</strong>
+              with a robust background in developing
+              <strong>scalable</strong> and
+              <strong>efficient web applications</strong>. With comprehensive
+              experience in
+              <strong>both front-end and back-end development</strong>, as well
+              as adeptness in <strong>database design and management</strong>, I
+              have honed my expertise in creating
+              <strong>seamless user experiences</strong> and
+              <strong>powerful server-side functionalities</strong>. I am
+              proficient in <strong>JavaScript</strong>, <strong>React</strong>,
+              <strong>MongoDB</strong>, <strong>Express.js</strong>,
+              <strong>Node.js</strong>, among other web technologies. My
+              technical acumen is complemented by my ability to quickly adapt to
+              <strong>emerging technologies</strong> and
+              <strong>innovative techniques</strong>. I am always eager to
+              expand my skill set and continuously improve through learning and
+              applying <strong>new knowledge</strong>.
             </p>
-            <div class="btn-con">
-              <a href="ParamResume.pdf" class="main-btn">
-                <span class="btn-text">Download CV</span>
+            <div class="btn-con" onclick="handleWorkClick()">
+              <a class="main-btn">
+                <span class="btn-text">See Recent Work</span>
                 <span class="btn-icon"><i class="fas fa-download"></i></span>
               </a>
             </div>
@@ -144,76 +158,63 @@
 
         <div class="about-stats">
           <h4 class="stat-title">My Skills Overview</h4>
-          <div class="progress-bars">
-            <div class="progress-bar">
-              <p class="prog-title">Html5</p>
-              <div class="progress-con">
-                <p class="prog-text">95%</p>
-                <div class="progress">
-                  <span class="html"></span>
+
+          <div class="skills-container">
+            <div class="skills-section">
+              <h3>Front-End Skills</h3>
+              <div class="skills">
+                <div class="skill react">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                </div>
+                <div class="skill react-native">
+                  <i class="fab fa-react"></i>
+                  <span>Native</span>
+                </div>
+                <div class="skill redux">
+                  <i class="fas fa-brain"></i>
+                  <span>Redux RTK</span>
+                </div>
+                <div class="skill tailwind">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>Tailwind</span>
+                </div>
+                <div class="skill scss">
+                  <i class="fab fa-sass"></i>
+                  <span>SCSS</span>
+                </div>
+                <div class="skill git">
+                  <i class="fab fa-git-alt"></i>
+                  <span>Git</span>
+                </div>
+                <div class="skill github">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
                 </div>
               </div>
             </div>
-            <div class="progress-bar">
-              <p class="prog-title">Css3</p>
-              <div class="progress-con">
-                <p class="prog-text">95%</p>
-                <div class="progress">
-                  <span class="css"></span>
+            <div class="skills-section">
+              <h3>Back-End Skills</h3>
+              <div class="skills">
+                <div class="skill node">
+                  <i class="fab fa-node"></i>
+                  <span>Node.js</span>
                 </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">Javascript</p>
-              <div class="progress-con">
-                <p class="prog-text">90%</p>
-                <div class="progress">
-                  <span class="js"></span>
+                <div class="skill express">
+                  <i class="fas fa-server"></i>
+                  <span>Express.js</span>
                 </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">React js</p>
-              <div class="progress-con">
-                <p class="prog-text">80%</p>
-                <div class="progress">
-                  <span class="react"></span>
+                <div class="skill api">
+                  <i class="fas fa-cloud"></i>
+                  <span>REST APIs</span>
                 </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">Scss / Sass</p>
-              <div class="progress-con">
-                <p class="prog-text">70%</p>
-                <div class="progress">
-                  <span class="sass"></span>
+                <div class="skill socket">
+                  <i class="fas fa-bolt"></i>
+                  <span>Socket</span>
                 </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">Node js</p>
-              <div class="progress-con">
-                <p class="prog-text">90%</p>
-                <div class="progress">
-                  <span class="node"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">MongoDB</p>
-              <div class="progress-con">
-                <p class="prog-text">70%</p>
-                <div class="progress">
-                  <span class="sass"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">Tailwind css</p>
-              <div class="progress-con">
-                <p class="prog-text">90%</p>
-                <div class="progress">
-                  <span class="node"></span>
+                <div class="skill mongodb">
+                  <i class="fas fa-database"></i>
+                  <span>MongoDB</span>
                 </div>
               </div>
             </div>
@@ -227,7 +228,7 @@
               <i class="fas fa-briefcase"></i>
             </div>
             <p class="tl-duration">2023 - present</p>
-            <h5>MERN Stack Developer</h5>
+            <h5>Fullstack JavaScript Engineer</h5>
             <p>
               As a developer, I am passionate about learning and improving my
               skills. I am constantly working to stay up-to-date with the latest
@@ -283,59 +284,19 @@
       <section class="section sec3" id="portfolio">
         <div class="main-title">
           <h2>
-            My <span>portfolio</span> <span class="bg-text">my work</span>
+            MY Recent <span>Work</span> <span class="bg-text">my work</span>
           </h2>
         </div>
         <p class="port-text">
-          here are some of my recent work thar i have done using various
-          technologies
+          "Here are some examples of my recent work, showcasing various
+          technologies I've utilized. Take a moment to explore and appreciate
+          the details."
         </p>
 
         <div class="portfolios">
           <!-- ///////////////////// -->
           <!-- Projects are in js -->
           <!-- //////////////////////// -->
-        </div>
-      </section>
-
-      <section class="section sec4" id="blogs">
-        <div class="blogs-content">
-          <div class="main-title">
-            <h2>my <span>Blogs</span> <span class="bg-text">my blogs</span></h2>
-          </div>
-
-          <div class="blogs">
-            <div class="blog">
-              <img src="img/blog1.jpg" alt="" />
-              <div class="blog-text">
-                <h4>How to create your own website</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                  quae impedit ex corrupti sit animi?
-                </p>
-              </div>
-            </div>
-            <div class="blog">
-              <img src="img/blog2.jpg" alt="" />
-              <div class="blog-text">
-                <h4>How to create your own website</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                  quae impedit ex corrupti sit animi?
-                </p>
-              </div>
-            </div>
-            <div class="blog">
-              <img src="img/blog3.jpg" alt="" />
-              <div class="blog-text">
-                <h4>How to create your own website</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                  quae impedit ex corrupti sit animi?
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 

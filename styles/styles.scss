@@ -1,5 +1,6 @@
 @use 'media' as *;
 
+
 *{
     margin: 0;
     padding: 0;
@@ -31,7 +32,7 @@ $transition:all .4s ease-in-out;
 
 
 .light-mode{
-    --color-primary: #fdfdfd;
+    --color-primary: #fafafa;
     --color-secondary: #2196F3;
     --color-white:  #191d2b;
     --color-grey-1: #000000;
@@ -352,10 +353,12 @@ header{
             line-height: 2rem;
             padding: 1rem;
             max-width: 600px;
-            @media screen and (min-width:1000px) {
-                font-size: 1.1rem;
-            }
-            
+            font-size: .897rem;
+            color: rgb(160, 160, 160);
+
+           strong{
+            color: rgb(202, 202, 202);
+           }
         }
 
         .btn-con{
@@ -447,11 +450,10 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 1rem;
         text-align: center;
-        gap: 2rem;
-        width: 95%;
+        min-width: 90%;
         margin: auto;
-        max-width: 700px;
 
 
         @include lgMobile{
@@ -465,6 +467,13 @@ header{
         p{
             color: var(--color-grey-1);
             margin: auto;
+            font-size: .897rem;
+            color: rgb(160, 160, 160);
+
+           strong{
+            color: rgb(202, 202, 202);
+           }
+
         }
 
         h4{
@@ -474,7 +483,7 @@ header{
         }
 
         .btn-con{
-            margin: auto;
+            margin: 0 auto;
         }
     }
 }
@@ -482,89 +491,157 @@ header{
 .about-stats{
     padding-bottom: 4rem;
     width: 100%;
-
-    .progress-bars{
-        display: grid;
-        grid-template-columns: 80%;
+    
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
         justify-content: center;
-        grid-gap: 2rem;
-
-        @include smLaptop{
-            grid-template-columns: repeat(2,1fr);
-            padding: 0 2rem;
-        }
-
-
-        .progress-bar{
+        width: 100%;
+        padding: 0 10rem;
+    
+        .skills-section {
+            width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-
-            .prog-title{
+            align-items: center;
+            margin-bottom: 2rem;
+    
+            h3 {
                 text-align: center;
+                margin-bottom: 1rem;
+                font-size: 2rem;
+                font-weight: bold;
             }
-
-            .prog-text{
-                text-transform: uppercase;
-                font-weight: 500;
-            }
-
-            .progress-con{
-                display: flex;
+    
+            .skills {
+                display: grid;
+                justify-items: center;
                 align-items: center;
-                justify-content: center;
+                width: 100%;
+                grid-template-columns: repeat(auto-fit, minmax(min(100%, 120px), 1fr));
+                gap: 16px; 
+    
+                .skill {
+                    border: 1px solid var(--color-grey-5);
+                    border-radius: 5px;
+                    transition: $transition;
+                    box-shadow: 1px 2px 15px rgba(0,0,0,.1);
+                    display: flex;
+                    flex-direction:column;
+                    justify-content: center;
+                    justify-items: center;
+                    text-align: center;
+                    align-items: center;
+                    cursor: pointer;
+                    width: 120px;
+                    height: 120px;
+                    padding: .5rem;
 
-                .prog-text{
-                    color: var(--color-grey-2);
-                }
-
-                .progress{
-                    width: 100%;
-                    height: .45rem;
-                    background-color: var(--color-grey-4);
-                    margin-left: 1rem;
-                    position: relative; 
-                    border-radius: 2rem;
-                    overflow: hidden;
-                    max-width: 700px;
-                    
-                    span{
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        height: 100%;
-                        background: var(--color-secondary);
-                        transition: $transition;
+                    &:hover {
+                        transform: translateY(-5px);
+                        cursor: pointer;
+                        border: 1px solid var(--color-secondary);
+                        box-shadow: 1px 2px 15px rgba(0,0,0,.32);
                     }
-
-                    .html{
-                        width: 95%;
+    
+                    i {
+                        font-size: 3rem;
+                        margin-bottom: 0.5rem;
                     }
-
-                    .css{
-                        width: 95%;
+    
+                    span {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        color: #c5c5c5; 
                     }
-
-                    .js{
-                        width: 90%;
-                    }
-
-                    .react{
-                        width: 80%;
-                    }
-
-                    .sass{
-                        width: 70%;
-                    }
-
-                    .node{
-                        width: 90%;
-                    }
-
                 }
             }
         }
     }
+    
+    .skill.react i {
+        color: #00c6fd ; 
+    }
+
+    .skill.react-native i {
+        color: #a200ff; 
+    }
+    
+    .skill.redux i {
+        color: #764abc; 
+    }
+    
+    .skill.tailwind i {
+        color: #38b2ac; 
+    }
+    
+    .skill.scss i {
+        color: #c76494; 
+    }
+    
+    .skill.git i {
+        color: #f34f29;
+    }
+    
+    .skill.github i {
+        color: #868686;
+    }
+    
+    .skill.node i {
+        color: #68a063; 
+    }
+    
+    .skill.express i {
+        color: #868686; 
+    }
+    
+    .skill.api i {
+        color: #3498db; 
+    }
+    
+    .skill.socket i {
+        color: #ffdc00; 
+    }
+    
+    .skill.mongodb i {
+        color: #47a248; 
+    }
+    
+    @media (max-width: 768px) {
+        .skills-container {
+            padding: 0 2rem;
+        }
+    
+        .skills-section {
+            width: 100%;
+    
+            h3 {
+                font-size: 1.5rem;
+            }
+    
+            .skills .skill i {
+                font-size: 2.5rem;
+            }
+    
+            .skills .skill span {
+                font-size: 1rem;
+            }
+        }
+    }
+    
+
+
+    
+
+
+
+
+
+
+
+
 }
 
 // timleline
@@ -635,7 +712,8 @@ padding-bottom: 7rem;
     grid-template-columns: 80%;
     grid-gap: 2rem;
     justify-content: center;
-    margin-top: 2rem;padding-bottom: 5rem;
+    margin-top: 2rem
+    ;padding-bottom: 5rem;
 
 
     @include tablet{
@@ -652,7 +730,7 @@ padding-bottom: 7rem;
 
             img{
                 width: 100%;
-                height: 300px;
+                height: 280px;
                 object-fit: cover;
                 border-radius: 15px;
             }
@@ -1060,5 +1138,36 @@ padding-bottom: 7rem;
         text-transform: uppercase;
         font-size: 3rem;
         width: max-content;
+    }
+}
+
+
+.light-mode {
+
+    .header-content{
+        .right-header{
+            p{
+                color: var(--color-black);
+                strong {
+                    color: var(--color-grey-2);
+                }
+            }
+        }
+    }
+
+    .about-container {
+        p{
+            color: var(--color-black);
+            strong {
+                color: var(--color-grey-2);
+            }
+        }
+    }
+
+
+    .skill{
+        span{
+            color: var(--color-black) !important;
+        }
     }
 }
