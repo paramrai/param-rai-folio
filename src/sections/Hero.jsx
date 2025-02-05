@@ -12,14 +12,14 @@ const Hero = () => {
     <section id="hero" className="container mx-auto px-8">
       <div className="flex flex-col lg:flex-row gap-14 items-center justify-between mt-[80px]">
         <div className="order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0">
-          <h1 className="w-full lg:w-[600px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="w-full lg:w-[800px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] bg-gradient-primary bg-clip-text text-transparent">
             I Build scalable apps and prioritize users.
           </h1>
-          <h3 className="w-full lg:w-[500px] text-xl lg:text-2xl font-medium text-black mt-4">
+          <h3 className="w-full lg:w-[700px] text-xl lg:text-2xl font-medium text-black mt-4">
             👋 "Hi, I'm Param Rai, a skilled Full Stack Engineer passionate
             about crafting seamless and innovative web and mobile applications."
           </h3>
-          <p className="w-full lg:w-[500px] text-sm lg:text-base mt-4">
+          <p className="w-full lg:w-[700px] text-sm lg:text-base mt-4">
             With a keen eye for detail and a dedication to coding excellence
           </p>
 
