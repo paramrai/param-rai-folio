@@ -2,6 +2,8 @@ import React from "react";
 
 import PROFILE_PIC from "../assets/hero.png";
 import { FaJava, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
+import { STATS } from "../utils/data";
+import StatInfoCard from "../components/StatInfoCard";
 
 const Hero = () => {
   return (
@@ -55,7 +57,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex gap-12"></div>
+      <div className="flex gap-12 mt-16 md:mt-24 flex-wrap">
+        {STATS.map((item) => (
+          <StatInfoCard key={item.id} count={item.count} label={item.label} />
+        ))}
+      </div>
     </section>
   );
 };

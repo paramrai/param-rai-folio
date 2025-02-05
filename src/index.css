@@ -42,4 +42,16 @@
   .hero-icon {
     @apply w-10 h-10 md:w-12  md:h-12 absolute transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-0 bg-primary rounded-lg flex justify-center items-center z-10 text-white text-xl md:text-2xl;
   }
+
+  .section-title {
+    @apply text-[20px] font-semibold text-center bg-gradient-primary bg-clip-text text-transparent;
+  }
+
+  .arrow-btn {
+    @apply absolute top-1/2 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full shadow;
+  }
+
+  .input-box {
+    @apply bg-orange-50 rounded-2xl border border-orange-100 px-4 py-3 placeholder:text-orange-400/80 placeholder:text-sm mb-5 focus:outline-none focus:border-primary;
+  }
 }
