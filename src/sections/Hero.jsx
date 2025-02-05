@@ -1,26 +1,26 @@
 import React from "react";
 
-import PROFILE_PIC from "../assets/hero.png";
 import { FaJava, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { STATS } from "../utils/data";
 import StatInfoCard from "../components/StatInfoCard";
+
+const PROFILE_PIC =
+  "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/e76d4296-43f3-493b-9d50-f8e5c142d06c/2117667014/boys-profile-picture-screenshot.png";
 
 const Hero = () => {
   return (
     <section id="hero" className="container mx-auto px-8">
       <div className="flex flex-col lg:flex-row gap-14 items-center justify-between mt-[80px]">
         <div className="order-2 lg:order-1 text-center lg:text-left mt-16 lg:mt-0">
-          <h3 className="text-xl lg:text-2xl font-medium text-black">
-            Hi 👋 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dolores,
-          </h3>
-          <h1 className="w-full lg:w-[480px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] mt-3 bg-gradient-primary bg-clip-text text-transparent">
-            Building scalebale Lorem ipsum dolor sit.
+          <h1 className="w-full lg:w-[600px] text-4xl lg:text-5xl font-bold leading-[50px] lg:leading-[60px] bg-gradient-primary bg-clip-text text-transparent">
+            I Build scalable apps and prioritize users.
           </h1>
+          <h3 className="w-full lg:w-[500px] text-xl lg:text-2xl font-medium text-black mt-4">
+            👋 "Hi, I'm Param Rai, a skilled Full Stack Engineer passionate
+            about crafting seamless and innovative web and mobile applications."
+          </h3>
           <p className="w-full lg:w-[500px] text-sm lg:text-base mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            est commodi repellendus facilis perspiciatis earum pariatur maiores
-            vitae nulla iure?
+            With a keen eye for detail and a dedication to coding excellence
           </p>
 
           <div className="flex justify-center lg:justify-start gap-4 md:gap-8 mt-6">
@@ -33,8 +33,14 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-[300px] h-[300px] md:min-w-[300px] md:min-h-[300px] bg-orange-500/50 rounded-3xl relative order-1 lg:order-2">
-          {/* <img src={PROFILE_PIC} alt="profilePic" className="profile-pic" /> */}
+        <div className="bg-orange-500/50 rounded-3xl w-[250px] h-[250px] md:min-w-[300px] md:min-h-[300px] relative order-1 lg:order-2">
+          <div className="rounded-3xl w-[250px] h-[250px] md:min-w-[300px] md:min-h-[300px]">
+            <img
+              src={PROFILE_PIC}
+              alt="profilePic"
+              className="profile-pic h-full w-full object-cover rounded-3xl"
+            />
+          </div>
 
           <div className="hero-icon top-[20px] left-[-20px] rotate-[15deg]">
             <FaReact />

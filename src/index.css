@@ -7,6 +7,7 @@
 @layer base {
   html {
     font-family: "Poppins", "sans-serif";
+    width: 100%;
   }
 
   body {
@@ -20,7 +21,7 @@
   }
 
   .menu-item {
-    @apply relative before:content-[''] before:absolute before:w-0 before:h-[3px] before:bg-gradient-primary before:rounded-full before:bottom-1 before:left-0 before:transition-all before:duration-300 hover:before:w-full cursor-pointer;
+    @apply relative before:content-[''] before:absolute before:w-0 before:h-[3px] before:bg-gradient-primary before:rounded-full before:bottom-0 before:left-0 before:transition-all before:duration-300 hover:before:w-full cursor-pointer;
   }
 
   .action-btn-outline {

@@ -22,7 +22,7 @@ const TechnicalProficiency = () => {
 
   return (
     <section id="skills" className="bg-background mt-20">
-      <div className="container mx-auto p-10">
+      <div className="container mx-auto px-10">
         <div className="w-full lg:w-[60vw] mx-auto">
           <h4 className="section-title">Technical Proficiency</h4>
 
@@ -39,7 +39,7 @@ const TechnicalProficiency = () => {
           onChange={handleTabValueChange}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 min-h-[430px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {tabData.map((skill, i) => (
             <motion.div
               className=""

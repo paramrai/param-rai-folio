@@ -123,8 +123,6 @@ export const SKILL_TABS = [
 ];
 
 export const ABOUT_ME = {
-  content:
-    "I am a passionate full-stack developer with expertise in modern web technologies. With over 3 years of experience, I specialize in building responsive, user-friendly applications using React, Node.js, and various databases. I'm committed to writing clean, maintainable code and staying current with industry best practices. My strong problem-solving skills and attention to detail help me deliver high-quality solutions that meet client needs. I enjoy collaborating with teams and tackling challenging projects that push my technical boundaries.",
   socialLinks: [
     { id: "01", label: "facebook", icon: FaFacebook, link: "#" },
     { id: "02", label: "instagram", icon: FaInstagram, link: "#" },
@@ -143,7 +141,7 @@ export const PROJECTS = [
     image: PROJECT_IMG_1,
     tags: ["React", "Express.js", "MongoDB", "Node.Js"],
     description:
-      "A full-featured Uber clone application built using the eatured Uber clone application built using the eatured Uber cbuilt using the eatured Ubeion built using the eatured Uber clone application built using the MERN stack.",
+      "A full-featured Uber clone appli application built using the the MERN stack.",
   },
   {
     id: 2,

@@ -4,14 +4,10 @@ import { ABOUT_ME } from "../utils/data";
 import ContactInfoCard from "../components/ContactInfoCard";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-};
-
 const ContactMe = () => {
   return (
-    <section id="contact">
-      <div className="container mx-auto p-10">
+    <section id="contact" className="mt-20">
+      <div className="container mx-auto px-10">
         <h4 className="section-title">Contact Me</h4>
 
         <p className="text-sm text-center mt-4 leading-6">
@@ -32,7 +28,11 @@ const ContactMe = () => {
             <h5 className="md:hidden text-secondary text-lg font-medium mt-4 pb-5">
               Contact Form
             </h5>
-            <form className="flex flex-col" onSubmit={handleSubmit}>
+            <form
+              className="flex flex-col"
+              action="https://formspree.io/f/mayzaokg"
+              method="POST"
+            >
               <input
                 type="text"
                 name="fullname"
@@ -40,22 +40,25 @@ const ContactMe = () => {
                 id=""
                 className="input-box"
                 autoComplete="off"
+                required
               />
 
               <input
-                type="text"
+                type="email"
                 name="email"
                 placeholder="Email"
                 id=""
                 className="input-box"
                 autoComplete="off"
+                required
               />
 
               <textarea
                 name="message"
                 id=""
                 rows={3}
-                className="input-box"
+                className="input-box max-h-52 min-h-24"
+                required
               ></textarea>
               <button className="action-btn btn-scale-anim rounded-full">
                 Submit

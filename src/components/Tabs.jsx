@@ -10,7 +10,7 @@ const Tabs = ({ tabList, activeTab, onChange }) => {
 
   return (
     <div className="flex items-center justify-center my-10">
-      <div className="bg-[#fff6eb] rounded-full flex">
+      <div className="sm:bg-[#fff6eb] rounded-full flex flex-wrap justify-center ">
         {tabList.map((tab) => (
           <motion.button
             initial={{ opacity: 0.8, scale: 1 }}
@@ -20,7 +20,7 @@ const Tabs = ({ tabList, activeTab, onChange }) => {
             }}
             transition={{ duration: 0.2 }}
             key={tab.id}
-            className={`taxt-xs  md:text-[15px] ${getActiveStyles(
+            className={`flex justify-center items-center text-xs md:text-[15px] ${getActiveStyles(
               tab.value
             )} rounded-full px-4 md:px-10 py-[6px] md:py-3`}
             onClick={() => onChange(tab.value)}

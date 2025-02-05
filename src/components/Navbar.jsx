@@ -4,7 +4,7 @@ import { MENU_LINKS } from "../utils/data";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
@@ -33,10 +33,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="container mx-auto sticky top-5 z-10">
+    <div className="container mx-auto sticky top-5 z-50">
       <div className="flex items-center justify-between rounded-full bg-white/25 border border-[#fee6cc] backdrop-blur-[10px] m-5 p-3 md:p-0">
         {/* logo  */}
-        <span>Logo</span>
+        <h2 className="section-title ml-6">Param Rai</h2>
 
         {/* hamburger menu */}
         <button
@@ -86,9 +86,15 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <button className="hidden md:block h-12 text-[15px] font-medium text-white bg-gradient-primary rounded-full px-9 transition-transform duration-300 ease-in-out hover:scale-105">
+        <Link
+          to="contact"
+          smooth
+          spy
+          offset={-80}
+          className="hidden md:flex justify-center items-center h-12 text-[15px] font-medium text-white bg-gradient-primary rounded-full px-9 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
+        >
           Hire Me
-        </button>
+        </Link>
       </div>
     </div>
   );
