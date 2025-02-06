@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <style>
+    .space-404 { fill: #1f2937; }
+    .stars { fill: #ffffff; }
+    .astronaut { fill: #7c3aed; }
+  </style>
+  <rect class="space-404" width="800" height="600"/>
+  <circle class="stars" cx="400" cy="300" r="3"/>
+  <!-- Add more stars with different positions -->
+  <path class="astronaut" d="M400 200c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm0 60c-11 0-20-9-20-20s9-20 20-20 20 9 20 20-9 20-20 20z"/>
+</svg>
