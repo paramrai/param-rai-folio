@@ -51,6 +51,8 @@ const MyProjects = () => {
                     title={project.title}
                     tags={project.tags}
                     description={project.description}
+                    code={project.github}
+                    demo={project.demo}
                   />
                 </div>
               ))}

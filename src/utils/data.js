@@ -61,6 +61,15 @@ export const SKILLS = [
   },
   {
     id: "02",
+    icon: FaReact,
+    progress: 50,
+    type: "frontend",
+    skill: "React Native",
+    description:
+      "Proficient in React Native, enabling the development of cross-platform mobile applications with a consistent user experience.",
+  },
+  {
+    id: "02",
     icon: FaHtml5,
     progress: 95,
     type: "frontend",
