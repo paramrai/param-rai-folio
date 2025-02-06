@@ -28,20 +28,18 @@ const AboutMe = () => {
           </h4>
 
           <p className="text-sm text-justify leading-6 whitespace-pre-line mt-4">
-            <p>
-              I am a Full-Stack JavaScript Engineer with over
-              <strong>3 years of hands-on experience</strong> specializing in
-              creating <strong>dynamic and responsive web applications</strong>.
-              My recent work demonstrates my proficiency in various cutting-edge
-              programming languages, frameworks, and technologies , such as{" "}
-              <strong>JavaScript</strong>, <strong>React</strong>,
-              <strong>Node.js</strong>, <strong>Express</strong>,
-              <strong>MongoDB</strong>, and <strong>React Native</strong>. I am
-              passionate about leveraging the latest industry trends and best
-              practices to build
-              <strong> scalable applications</strong>. Please explore my recent
-              work to see the impact I can make. Thank you for your time!
-            </p>
+            I am a Full-Stack JavaScript Engineer with over
+            <strong>3 years of hands-on experience</strong> specializing in
+            creating <strong>dynamic and responsive web applications</strong>.
+            My recent work demonstrates my proficiency in various cutting-edge
+            programming languages, frameworks, and technologies , such as{" "}
+            <strong>JavaScript</strong>, <strong>React</strong>,
+            <strong>Node.js</strong>, <strong>Express</strong>,
+            <strong>MongoDB</strong>, and <strong>React Native</strong>. I am
+            passionate about leveraging the latest industry trends and best
+            practices to build
+            <strong> scalable applications</strong>. Please explore my recent
+            work to see the impact I can make. Thank you for your time!
           </p>
 
           <div className="flex gap-4 mt-6">

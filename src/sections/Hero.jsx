@@ -3,6 +3,9 @@ import React from "react";
 import { FaJava, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { STATS } from "../utils/data";
 import StatInfoCard from "../components/StatInfoCard";
+import { Link } from "react-scroll";
+import { SiExpress, SiMongodb } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 const PROFILE_PIC =
   "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/e76d4296-43f3-493b-9d50-f8e5c142d06c/2117667014/boys-profile-picture-screenshot.png";
@@ -24,9 +27,14 @@ const Hero = () => {
           </p>
 
           <div className="flex justify-center lg:justify-start gap-4 md:gap-8 mt-6">
-            <button className="flex-1 md:flex-none action-btn-outline btn-scale-anim">
+            <Link
+              to="projects"
+              smooth
+              spy
+              className="flex justify-center items-center flex-1 md:flex-none action-btn-outline btn-scale-anim"
+            >
               Visit my work
-            </button>
+            </Link>
             <button className="flex-1 md:flex-none action-btn action-btn-outline btn-scale-anim">
               Download resume
             </button>
@@ -41,25 +49,26 @@ const Hero = () => {
               className="profile-pic h-full w-full object-cover rounded-3xl"
             />
           </div>
-
-          <div className="hero-icon top-[20px] left-[-20px] rotate-[15deg]">
+          <div className="hero-icon top-[20px] left-[-20px] rotate-[15deg] bg-[#61DAFB]">
             <FaReact />
           </div>
-          <div className="hero-icon top-[40%] right-[-20px] rotate-[-10deg]">
+          <div className="hero-icon top-[40%] right-[-20px] rotate-[-10deg] bg-[#68A063]">
             <FaNodeJs />
           </div>
-          <div className="hero-icon bottom-[35%] left-[-20px] rotate-[8deg]">
-            <FaPython />
+          <div className="hero-icon bottom-[35%] left-[-20px] rotate-[8deg] bg-[#47A248]">
+            <SiMongodb />
           </div>
-          <div className="hero-icon bottom-[-5%] left-[20px] rotate-[8deg]">
-            <FaPython />
+          <div className="hero-icon bottom-[-5%] left-[20px] rotate-[8deg] bg-[#000000]">
+            <SiExpress />
           </div>
-          <div className="hero-icon bottom-[-6%] left-[120px] rotate-[-5deg]">
-            <FaPython />
+          <div className="hero-icon bottom-[-6%] left-[120px] rotate-[-5deg] bg-[#a200ff]">
+            <FaReact />
           </div>
-          <div className="hero-icon bottom-[20px] right-[-20px] rotate-[-5deg]">
-            <FaJava />
+          <div className="hero-icon bottom-[20px] right-[-20px] rotate-[-5deg] bg-[#38b2ac]">
+            <RiTailwindCssFill />
           </div>
+
+          {/* //cdsafc */}
         </div>
       </div>
 

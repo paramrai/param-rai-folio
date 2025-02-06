@@ -3,26 +3,34 @@ import {
   FaHtml5,
   FaCss3,
   FaNodeJs,
+  FaLightbulb,
+  FaHandsHelping,
   FaFacebook,
   FaInstagram,
   FaLinkedin,
+  FaClock,
+  FaGraduationCap,
+  FaUsers,
+  FaListOl,
 } from "react-icons/fa";
-
 import { BiLogoJavascript } from "react-icons/bi";
-import { SiExpress, SiMongodb, SiMysql, SiWebpack } from "react-icons/si";
 import {
-  VscVscode,
-  VscCommentUnresolved,
-  VscTerminalPowershell,
-} from "react-icons/vsc";
-import { FaGitAlt, FaXTwitter, FaDribbble } from "react-icons/fa6";
+  SiMongodb,
+  SiExpress,
+  SiMysql,
+  SiDocker,
+  SiJenkins,
+  SiGit,
+  SiPostgresql,
+  SiKubernetes,
+  SiNginx,
+} from "react-icons/si";
+
+import { FaXTwitter, FaDribbble } from "react-icons/fa6";
 
 import PROJECT_IMG_1 from "../assets/ai_ss.png";
-import PROJECT_IMG_2 from "../assets/ai_ss.png";
-import PROJECT_IMG_3 from "../assets/ai_ss.png";
-import PROJECT_IMG_4 from "../assets/ai_ss.png";
-import PROJECT_IMG_5 from "../assets/ai_ss.png";
-import PROJECT_IMG_6 from "../assets/ai_ss.png";
+import PROJECT_IMG_2 from "../assets/uber_ss.png";
+import PROJECT_IMG_3 from "../assets/vanilla_js.png";
 
 export const MENU_LINKS = [
   { id: "01", label: "Home", offset: -100, to: "hero" },
@@ -33,10 +41,12 @@ export const MENU_LINKS = [
 ];
 
 export const STATS = [
-  { id: "01", count: "3+", label: `Years of \nExperieance` },
-  { id: "03", count: "20+", label: "Happy \nClients" },
-  { id: "04", count: "10+", label: "Awards \nReceived" },
+  { id: "01", count: "3+", label: `Years of \nExperience` },
+  { id: "03", count: "40+", label: "Happy \nClients" },
+  { id: "04", count: "10+", label: "Incentives \nReceived" },
   { id: "02", count: "50+", label: "Projects \nCompleted" },
+  { id: "07", count: "300+", label: "Cups of \nCoffee" },
+  { id: "10", count: "25+", label: "Certificates \nAchieved" },
 ];
 
 export const SKILLS = [
@@ -112,6 +122,87 @@ export const SKILLS = [
     description:
       "Skilled in MySQL database design, complex queries, stored procedures, and optimization. Experience with data modeling and normalization.",
   },
+  {
+    id: "09",
+    icon: FaLightbulb,
+    progress: 100,
+    type: "soft-skills",
+    skill: "Communication",
+    description:
+      "Excellent verbal and written communication skills, adept at conveying technical information to diverse audiences. Strong listener and collaborative team player.",
+  },
+  {
+    id: "10",
+    icon: FaHandsHelping,
+    progress: 100,
+    type: "soft-skills",
+    skill: "Problem Solving",
+    description:
+      "Creative problem solver with a knack for identifying root causes and implementing effective solutions. Skilled in troubleshooting and debugging.",
+  },
+  {
+    id: "11",
+    icon: FaUsers,
+    progress: 95,
+    type: "soft-skills",
+    skill: "Teamwork",
+    description:
+      "Strong team player with experience working in collaborative environments. Adept at building positive working relationships and fostering a team-oriented culture.",
+  },
+  {
+    id: "14",
+    icon: SiGit,
+    progress: 90,
+    type: "tools",
+    skill: "Git",
+    description:
+      "Skilled in using Git for version control, managing repositories, branching, merging, and collaborating with team members using platforms like GitHub and GitLab.",
+  },
+  {
+    id: "12",
+    icon: SiDocker,
+    progress: 85,
+    type: "tools",
+    skill: "Docker",
+    description:
+      "Proficient in using Docker for containerization, creating and managing Docker images, and orchestrating containers using Docker Compose.",
+  },
+  {
+    id: "15",
+    icon: FaClock,
+    progress: 90,
+    type: "soft-skills",
+    skill: "Time Management",
+    description:
+      "Excellent at prioritizing tasks, managing deadlines, and efficiently utilizing time to achieve project goals. Skilled in using time management tools and techniques.",
+  },
+  {
+    id: "16",
+    icon: FaGraduationCap,
+    progress: 95,
+    type: "soft-skills",
+    skill: "Adaptability",
+    description:
+      "Highly adaptable and capable of quickly learning new technologies and methodologies. Comfortable working in fast-paced and dynamic environments.",
+  },
+  {
+    id: "17",
+    icon: FaListOl,
+    progress: 90,
+    type: "soft-skills",
+    skill: "Leadership",
+    description:
+      "Effective leader with experience guiding teams, mentoring junior developers, and driving project success. Skilled in conflict resolution and team motivation.",
+  },
+  {
+    id: "19",
+    icon: SiKubernetes,
+    progress: 80,
+    type: "tools",
+    skill: "Kubernetes",
+    description:
+      "Experienced in using Kubernetes for container orchestration, managing clusters, deploying applications, and automating scaling and management processes.",
+  },
 ];
 
 export const SKILL_TABS = [
@@ -137,50 +228,32 @@ export const ABOUT_ME = {
 export const PROJECTS = [
   {
     id: 1,
-    title: "Uber clone ,mern stack app",
+    title: "Ai Powered : Collabrative Code editer",
     image: PROJECT_IMG_1,
+    github: "https://github.com/paramrai/ai_powered_coding_collab",
+    demo: "https://ai-powered-coding-collab.vercel.app/",
     tags: ["React", "Express.js", "MongoDB", "Node.Js"],
     description:
-      "A full-featured Uber clone appli application built using the the MERN stack.",
+      "A collaborative code editor with AI-powered features including chat prompts for code assistance, AI code edits, and real-time group chat using Socket.io. Users can sign up, create projects, invite collaborators, and code together in real-time. Future updates will include video chat functionality.",
   },
   {
     id: 2,
-    title: "E-commerce Dashboard",
+    title: "Uber clone",
     image: PROJECT_IMG_2,
-    tags: ["React", "Node.js", "MySQL", "Redux"],
+    github: "https://github.com/paramrai/uberClone",
+    demo: "https://uber-like.vercel.app/",
+    tags: ["React", "Express.js", "MongoDB", "Node.Js"],
     description:
-      "An admin dashboard for managing an e-commerce platform, with detailed analytics.",
+      "A full-stack Uber like app built with React and MongoDB featuring user authentication for riders and captains, real-time ride booking, geolocation-based navigation, OTP verification system, and ride tracking functionality.",
   },
   {
     id: 3,
-    title: "Real-time Chat Application",
+    title: "Master Vanilla Js",
     image: PROJECT_IMG_3,
-    tags: ["Socket.io", "Express", "MongoDB", "React"],
+    github: "https://github.com/paramrai/vanillaJs",
+    demo: "https://master-vanilla-js.vercel.app/",
+    tags: ["React", "Express.js", "MongoDB", "Node.Js"],
     description:
-      "A chat application that supports real-time messaging between users.",
-  },
-  {
-    id: 4,
-    title: "Task Management System",
-    image: PROJECT_IMG_4,
-    tags: ["React", "Firebase", "Material UI"],
-    description:
-      "A system for managing and tracking tasks, with a sleek Material UI design.",
-  },
-  {
-    id: 5,
-    title: "Weather Forecast App",
-    image: PROJECT_IMG_5,
-    tags: ["React", "Weather API", "CSS3"],
-    description:
-      "An application that provides weather forecasts and updates using a weather API.",
-  },
-  {
-    id: 6,
-    title: "Portfolio Website",
-    image: PROJECT_IMG_6,
-    tags: ["React", "Tailwind CSS", "Framer Motion"],
-    description:
-      "A personal portfolio website to showcase projects and skills, built with React and Tailwind CSS.",
+      "A collection of 100+ vanilla JavaScript projects showcasing various web development concepts including DOM manipulation, APIs, animations, games and interactive user interfaces built without any frameworks. More projects are being added continuously.",
   },
 ];

@@ -27,9 +27,9 @@ const TechnicalProficiency = () => {
           <h4 className="section-title">Technical Proficiency</h4>
 
           <p className="text-sm text-center mt-4 leading-6">
-            A versatile developer with hands-on expertise in modern technologies
-            , tools , and frameworks , dedicated to building toefficient ,
-            scalable ,and user-centric solutions
+            A versatile developer with hands-on expertise in modern
+            technologies, tools, and frameworks, dedicated to building
+            efficient, scalable, and user-centric solutions.
           </p>
         </div>
 
@@ -42,7 +42,6 @@ const TechnicalProficiency = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {tabData.map((skill, i) => (
             <motion.div
-              className=""
               key={skill.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

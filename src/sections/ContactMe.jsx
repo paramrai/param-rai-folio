@@ -11,11 +11,11 @@ const ContactMe = () => {
         <h4 className="section-title">Contact Me</h4>
 
         <p className="text-sm text-center mt-4 leading-6">
-          A versatile developer with hands-on expertise in modern technologies ,
-          tools , and frameworks , dedicated to building to efficient , scalable
-          ,and user-centric solutions
+          A versatile developer with hands-on expertise in modern technologies,
+          tools, and frameworks, dedicated to building efficient, scalable, and
+          user-centric solutions.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 mt-8">
           <div>
             <ContactInfoCard icon={<IoMdMail />} text={ABOUT_ME.email} />
             <ContactInfoCard
