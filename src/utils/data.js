@@ -35,8 +35,8 @@ import PROJECT_IMG_3 from "../assets/vanilla_js.png";
 export const MENU_LINKS = [
   { id: "01", label: "Home", offset: -100, to: "hero" },
   { id: "02", label: "Skills", offset: -80, to: "skills" },
-  { id: "03", label: "About Me", offset: -80, to: "about" },
   { id: "04", label: "Projects", offset: -80, to: "projects" },
+  { id: "03", label: "About Me", offset: -80, to: "about" },
   { id: "05", label: "Contact", offset: -80, to: "contact" },
 ];
 
@@ -49,177 +49,98 @@ export const STATS = [
   { id: "10", count: "25+", label: "Certificates \nAchieved" },
 ];
 
-export const SKILLS = [
-  {
-    id: "01",
-    icon: FaReact,
-    progress: 95,
-    type: "frontend",
-    skill: "React",
-    description:
-      "Expert in React with extensive experience building modern SPAs, managing complex state with Redux/Context, implementing custom hooks, optimizing performance, and creating reusable component libraries. Skilled in React Router DOM",
-  },
-  {
-    id: "02",
-    icon: FaReact,
-    progress: 50,
-    type: "frontend",
-    skill: "React Native",
-    description:
-      "Proficient in React Native, enabling the development of cross-platform mobile applications with a consistent user experience.",
-  },
-  {
-    id: "02",
-    icon: FaHtml5,
-    progress: 95,
-    type: "frontend",
-    skill: "HTML5",
-    description:
-      "Strong foundation in HTML5 with expertise in semantic markup, accessibility standards, and modern web features. Skilled in creating responsive layouts and implementing best practices for SEO.",
-  },
-  {
-    id: "03",
-    icon: FaCss3,
-    progress: 90,
-    type: "frontend",
-    skill: "CSS3",
-    description:
-      "Advanced CSS3 skills including Flexbox, Grid, animations, and responsive design. Experienced with CSS preprocessors like SASS and modern CSS frameworks.",
-  },
-  {
-    id: "04",
-    icon: BiLogoJavascript,
-    progress: 90,
-    type: "frontend",
-    skill: "JavaScript",
-    description:
-      "Proficient in ES6+ features including promises, async/await, modules, and modern array methods. Strong understanding of DOM manipulation and browser APIs.",
-  },
-  {
-    id: "05",
-    icon: SiMongodb,
-    progress: 85,
-    type: "backend",
-    skill: "MongoDB",
-    description:
-      "Experienced in MongoDB database design, CRUD operations, aggregation pipeline, and implementing data models. Skilled with Mongoose ODM for Node.js.",
-  },
-  {
-    id: "06",
-    icon: FaNodeJs,
-    progress: 88,
-    type: "backend",
-    skill: "Node.js",
-    description:
-      "Strong Node.js skills with experience in building scalable server-side applications, REST APIs, and real-time applications using Socket.io.",
-  },
-  {
-    id: "07",
-    icon: SiExpress,
-    progress: 85,
-    type: "backend",
-    skill: "Express.js",
-    description:
-      "Proficient in Express.js framework, building RESTful APIs, implementing middleware, handling authentication, and managing routes effectively.",
-  },
-  {
-    id: "08",
-    icon: SiMysql,
-    progress: 80,
-    type: "backend",
-    skill: "MySQL",
-    description:
-      "Skilled in MySQL database design, complex queries, stored procedures, and optimization. Experience with data modeling and normalization.",
-  },
-  {
-    id: "09",
-    icon: FaLightbulb,
-    progress: 100,
-    type: "soft-skills",
-    skill: "Communication",
-    description:
-      "Excellent verbal and written communication skills, adept at conveying technical information to diverse audiences. Strong listener and collaborative team player.",
-  },
-  {
-    id: "10",
-    icon: FaHandsHelping,
-    progress: 100,
-    type: "soft-skills",
-    skill: "Problem Solving",
-    description:
-      "Creative problem solver with a knack for identifying root causes and implementing effective solutions. Skilled in troubleshooting and debugging.",
-  },
-  {
-    id: "11",
-    icon: FaUsers,
-    progress: 95,
-    type: "soft-skills",
-    skill: "Teamwork",
-    description:
-      "Strong team player with experience working in collaborative environments. Adept at building positive working relationships and fostering a team-oriented culture.",
-  },
-  {
-    id: "14",
-    icon: SiGit,
-    progress: 90,
-    type: "tools",
-    skill: "Git",
-    description:
-      "Skilled in using Git for version control, managing repositories, branching, merging, and collaborating with team members using platforms like GitHub and GitLab.",
-  },
-  {
-    id: "12",
-    icon: SiDocker,
-    progress: 85,
-    type: "tools",
-    skill: "Docker",
-    description:
-      "Proficient in using Docker for containerization, creating and managing Docker images, and orchestrating containers using Docker Compose.",
-  },
-  {
-    id: "15",
-    icon: FaClock,
-    progress: 90,
-    type: "soft-skills",
-    skill: "Time Management",
-    description:
-      "Excellent at prioritizing tasks, managing deadlines, and efficiently utilizing time to achieve project goals. Skilled in using time management tools and techniques.",
-  },
-  {
-    id: "16",
-    icon: FaGraduationCap,
-    progress: 95,
-    type: "soft-skills",
-    skill: "Adaptability",
-    description:
-      "Highly adaptable and capable of quickly learning new technologies and methodologies. Comfortable working in fast-paced and dynamic environments.",
-  },
-  {
-    id: "17",
-    icon: FaListOl,
-    progress: 90,
-    type: "soft-skills",
-    skill: "Leadership",
-    description:
-      "Effective leader with experience guiding teams, mentoring junior developers, and driving project success. Skilled in conflict resolution and team motivation.",
-  },
-  {
-    id: "19",
-    icon: SiKubernetes,
-    progress: 80,
-    type: "tools",
-    skill: "Kubernetes",
-    description:
-      "Experienced in using Kubernetes for container orchestration, managing clusters, deploying applications, and automating scaling and management processes.",
-  },
-];
-
 export const SKILL_TABS = [
   { id: "01", label: "All", value: "all" },
   { id: "02", label: "Frontend", value: "frontend" },
   { id: "03", label: "Backend", value: "backend" },
   { id: "04", label: "Tools", value: "tools" },
-  { id: "05", label: "Soft Skills", value: "soft-skills" },
+];
+
+export const SKILLS = [
+  {
+    id: "01",
+    icon: FaReact,
+    type: "frontend",
+    skill: "React",
+    color: "#61DBFB",
+  },
+  {
+    id: "02",
+    icon: FaReact,
+    type: "frontend",
+    skill: "React Native",
+    color: "#a200ff",
+  },
+  {
+    id: "03",
+    icon: FaHtml5,
+    type: "frontend",
+    skill: "HTML5",
+    color: "#E34F26",
+  },
+  {
+    id: "04",
+    icon: FaCss3,
+    type: "frontend",
+    skill: "CSS3",
+    color: "#1572B6",
+  },
+  {
+    id: "05",
+    icon: BiLogoJavascript,
+    type: "frontend",
+    skill: "JavaScript",
+    color: "#F7DF1E",
+  },
+  {
+    id: "06",
+    icon: SiMongodb,
+    type: "backend",
+    skill: "MongoDB",
+    color: "#47A248",
+  },
+  {
+    id: "07",
+    icon: FaNodeJs,
+    type: "backend",
+    skill: "Node.js",
+    color: "#339933",
+  },
+  {
+    id: "08",
+    icon: SiExpress,
+    type: "backend",
+    skill: "Express.js",
+    color: "#000000",
+  },
+  {
+    id: "09",
+    icon: SiMysql,
+    type: "backend",
+    skill: "MySQL",
+    color: "#4479A1",
+  },
+  {
+    id: "10",
+    icon: SiGit,
+    type: "tools",
+    skill: "Git",
+    color: "#F05032",
+  },
+  {
+    id: "11",
+    icon: SiDocker,
+    type: "tools",
+    skill: "Docker",
+    color: "#2496ED",
+  },
+  {
+    id: "12",
+    icon: SiKubernetes,
+    type: "tools",
+    skill: "Kubernetes",
+    color: "#326CE5",
+  },
 ];
 
 export const ABOUT_ME = {

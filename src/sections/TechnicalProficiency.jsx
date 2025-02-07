@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { SKILL_TABS, SKILLS } from "../utils/data";
 import Tabs from "../components/Tabs";
-import SkillCard from "../components/SkillCard";
 import { motion } from "framer-motion";
 
 const TechnicalProficiency = () => {
@@ -39,20 +38,17 @@ const TechnicalProficiency = () => {
           onChange={handleTabValueChange}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="flex flex-wrap gap-4 justify-center items-center">
           {tabData.map((skill, i) => (
             <motion.div
               key={skill.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
+              style={{ backgroundColor: skill.color }}
+              className="p-4 rounded-lg"
             >
-              <SkillCard
-                icon={<skill.icon className="w-6 h-6 text-primary" />}
-                skillName={skill.skill}
-                progress={skill.progress}
-                description={skill.description}
-              />
+              <skill.icon className="w-6 h-6 text-white" />
             </motion.div>
           ))}
         </div>
