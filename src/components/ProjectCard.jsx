@@ -11,20 +11,22 @@ const ProjectCard = ({ title, description, imgUrl, tags, demo, code }) => {
           alt={title}
           className="w-full h-72 md:h-80 object-cover rounded-xl"
         />
-        <div className="bg-transparent backdrop-blur-sm absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-100 transform-transition duration-300 ease-in-out flex items-center justify-center gap-4">
+        <div className="bg-transparent backdrop-blur-sm absolute top-0 left-0 w-full h-full rounded-xl opacity-0 group-hover:opacity-100 transform-transition duration-300 ease-in-out flex items-center justify-center gap-6">
           <a
             href={code}
             target="_blank"
-            className="bg-primary cursor-pointer text-white text-xl rounded-full h-14 w-14 flex items-center justify-center translate-x-[-300px] group-hover:translate-x-0  transform-transition duration-500 ease-in-out"
+            className="bg-primary cursor-pointer text-white rounded-full h-12 px-5 flex items-center justify-center gap-2 translate-x-[-300px] group-hover:translate-x-0 transform-transition duration-500 ease-in-out"
           >
-            <FaGithub />
+            <FaGithub className="text-xl" />
+            <span className="text-sm font-medium">See code</span>
           </a>
           <a
             href={demo}
             target="_blank"
-            className="bg-primary cursor-pointer text-white text-xl rounded-full h-14 w-14 flex items-center justify-center translate-x-[300px] group-hover:translate-x-0  transform-transition duration-500 ease-in-out"
+            className="bg-primary cursor-pointer text-white rounded-full h-12 px-5 flex items-center justify-center gap-2 translate-x-[300px] group-hover:translate-x-0 transform-transition duration-500 ease-in-out"
           >
-            <MdLiveTv />
+            <MdLiveTv className="text-xl" />
+            <span className="text-sm font-medium">Live demo</span>
           </a>
         </div>
       </div>

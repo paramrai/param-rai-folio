@@ -38,7 +38,7 @@ const TechnicalProficiency = () => {
           onChange={handleTabValueChange}
         />
 
-        <div className="flex flex-wrap gap-4 justify-center items-center">
+        <div className="flex flex-wrap gap-4 justify-center items-center pt-2">
           {tabData.map((skill, i) => (
             <motion.div
               key={skill.id}
@@ -46,11 +46,34 @@ const TechnicalProficiency = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
               style={{ backgroundColor: skill.color }}
-              className="p-4 rounded-lg"
+              className="group relative p-4 rounded-xl cursor-default"
             >
               <skill.icon className="w-6 h-6 text-white" />
+
+              {/* Tooltip */}
+              <div className="absolute -top-10 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 transition-all duration-200 ease-in-out pointer-events-none">
+                <div
+                  style={{ backgroundColor: skill.color }}
+                  className="text-white text-[10px] font-medium px-2 py-1 rounded-md shadow-lg whitespace-nowrap border border-white/20"
+                >
+                  {skill.skill}
+                  <div
+                    style={{ backgroundColor: skill.color }}
+                    className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45"
+                  ></div>
+                </div>
+              </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="flex justify-center mt-12">
+          <a
+            href="#contact"
+            className="bg-primary text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-primary/30 active:scale-95"
+          >
+            Hire Me
+          </a>
         </div>
       </div>
     </section>

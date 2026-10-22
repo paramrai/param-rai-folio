@@ -28,8 +28,7 @@ const AboutMe = () => {
           </h4>
 
           <p className="text-sm text-justify leading-6 whitespace-pre-line mt-4">
-            I am a Full-Stack JavaScript Engineer with over
-            <strong>3 years of hands-on experience</strong> specializing in
+            I am a Full-Stack JavaScript Engineer with over <strong>3 years of hands-on experience</strong> specializing in
             creating <strong>dynamic and responsive web applications</strong>.
             My recent work demonstrates my proficiency in various cutting-edge
             programming languages, frameworks, and technologies , such as{" "}
@@ -45,9 +44,16 @@ const AboutMe = () => {
           <div className="flex gap-4 mt-6">
             {ABOUT_ME.socialLinks.map((link) => {
               return (
-                <a key={link.label} className="cursor-pointer group">
+                <a key={link.label} className="cursor-pointer group" onClick={(e) => e.preventDefault()}>
                   {
-                    <link.icon className="text-2xl text-secondary transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 group-hover:translate-y-[-2px] group-hover:text-primary" />
+                    <link.icon
+                      className="text-2xl transition-all duration-300 group-hover:rotate-12 group-hover:scale-110 group-hover:translate-y-[-2px]"
+                      style={{
+                        color: '#8B4513', // Brown color
+                      }}
+                      onMouseEnter={(e) => e.currentTarget.style.color = link.color}
+                      onMouseLeave={(e) => e.currentTarget.style.color = '#8B4513'}
+                    />
                   }
                 </a>
               );

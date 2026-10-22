@@ -41,7 +41,7 @@ export const MENU_LINKS = [
 ];
 
 export const STATS = [
-  { id: "01", count: "3+", label: `Years of \nExperience` },
+  { id: "01", count: "6+", label: `Years of \nExperience` },
   { id: "03", count: "40+", label: "Happy \nClients" },
   { id: "04", count: "10+", label: "Incentives \nReceived" },
   { id: "02", count: "50+", label: "Projects \nCompleted" },
@@ -145,11 +145,11 @@ export const SKILLS = [
 
 export const ABOUT_ME = {
   socialLinks: [
-    { id: "01", label: "facebook", icon: FaFacebook, link: "#" },
-    { id: "02", label: "instagram", icon: FaInstagram, link: "#" },
-    { id: "03", label: "twitter", icon: FaXTwitter, link: "#" },
-    { id: "04", label: "linkedin", icon: FaLinkedin, link: "#" },
-    { id: "05", label: "dribbble", icon: FaDribbble, link: "#" },
+    { id: "01", label: "facebook", icon: FaFacebook, link: "#", color: "#1877F2" },
+    { id: "02", label: "instagram", icon: FaInstagram, link: "#", color: "#E4405F" },
+    { id: "03", label: "twitter", icon: FaXTwitter, link: "#", color: "#000000" },
+    { id: "04", label: "linkedin", icon: FaLinkedin, link: "#", color: "#0077B5" },
+    { id: "05", label: "dribbble", icon: FaDribbble, link: "#", color: "#EA4C89" },
   ],
   email: "paramrai0202@gmail.com",
   phone: "+91 6376645911",
