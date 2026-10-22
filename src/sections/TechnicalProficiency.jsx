@@ -38,7 +38,7 @@ const TechnicalProficiency = () => {
           onChange={handleTabValueChange}
         />
 
-        <div className="flex flex-wrap gap-4 justify-center items-center pt-2">
+        <div className="flex flex-wrap gap-4 justify-center items-center">
           {tabData.map((skill, i) => (
             <motion.div
               key={skill.id}
@@ -65,15 +65,6 @@ const TechnicalProficiency = () => {
               </div>
             </motion.div>
           ))}
-        </div>
-
-        <div className="flex justify-center mt-12">
-          <a
-            href="#contact"
-            className="bg-primary text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-primary/30 active:scale-95"
-          >
-            Hire Me
-          </a>
         </div>
       </div>
     </section>
