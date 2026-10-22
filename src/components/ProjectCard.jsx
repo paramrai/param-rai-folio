@@ -15,19 +15,23 @@ const ProjectCard = ({ title, description, imgUrl, tags, demo, code }) => {
           <a
             href={code}
             target="_blank"
-            className="bg-primary cursor-pointer text-white rounded-full h-12 px-5 flex items-center justify-center gap-2 translate-x-[-300px] group-hover:translate-x-0 transform-transition duration-500 ease-in-out"
+            className={`bg-primary cursor-pointer text-white rounded-full h-12 px-5 flex items-center justify-center gap-2 transform-transition duration-500 ease-in-out ${
+              demo ? "translate-x-[-300px] group-hover:translate-x-0" : "translate-x-0 group-hover:translate-x-0"
+            }`}
           >
             <FaGithub className="text-xl" />
             <span className="text-sm font-medium">See code</span>
           </a>
-          <a
-            href={demo}
-            target="_blank"
-            className="bg-primary cursor-pointer text-white rounded-full h-12 px-5 flex items-center justify-center gap-2 translate-x-[300px] group-hover:translate-x-0 transform-transition duration-500 ease-in-out"
-          >
-            <MdLiveTv className="text-xl" />
-            <span className="text-sm font-medium">Live demo</span>
-          </a>
+          {demo && (
+            <a
+              href={demo}
+              target="_blank"
+              className="bg-primary cursor-pointer text-white rounded-full h-12 px-5 flex items-center justify-center gap-2 translate-x-[300px] group-hover:translate-x-0 transform-transition duration-500 ease-in-out"
+            >
+              <MdLiveTv className="text-xl" />
+              <span className="text-sm font-medium">Live demo</span>
+            </a>
+          )}
         </div>
       </div>
 

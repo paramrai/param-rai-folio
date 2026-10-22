@@ -43,7 +43,7 @@ export const MENU_LINKS = [
 export const STATS = [
   { id: "01", count: "6+", label: `Years of \nExperience` },
   { id: "03", count: "40+", label: "Happy \nClients" },
-  { id: "04", count: "10+", label: "Incentives \nReceived" },
+  { id: "04", count: "10+", label: "Recognitions \nReceived" },
   { id: "02", count: "50+", label: "Projects \nCompleted" },
   { id: "07", count: "300+", label: "Cups of \nCoffee" },
   { id: "10", count: "25+", label: "Certificates \nAchieved" },
@@ -156,28 +156,8 @@ export const ABOUT_ME = {
 };
 
 export const PROJECTS = [
-  {
+   {
     id: 1,
-    title: "Ai Powered : Collabrative Code editer",
-    image: PROJECT_IMG_1,
-    github: "https://github.com/paramrai/ai_powered_coding_collab",
-    demo: "https://ai-powered-coding-collab.vercel.app/",
-    tags: ["React", "Express.js", "MongoDB", "Node.Js"],
-    description:
-      "A collaborative code editor with AI-powered features including chat prompts for code assistance, AI code edits, and real-time group chat using Socket.io. Users can sign up, create projects, invite collaborators, and code together in real-time. Future updates will include video chat functionality.",
-  },
-  {
-    id: 2,
-    title: "Uber clone",
-    image: PROJECT_IMG_2,
-    github: "https://github.com/paramrai/uberClone",
-    demo: "https://uber-like.vercel.app/",
-    tags: ["React", "Express.js", "MongoDB", "Node.Js"],
-    description:
-      "A full-stack Uber like app built with React and MongoDB featuring user authentication for riders and captains, real-time ride booking, geolocation-based navigation, OTP verification system, and ride tracking functionality.",
-  },
-  {
-    id: 3,
     title: "Master Vanilla Js",
     image: PROJECT_IMG_3,
     github: "https://github.com/paramrai/vanillaJs",
@@ -186,4 +166,25 @@ export const PROJECTS = [
     description:
       "A collection of 100+ vanilla JavaScript projects showcasing various web development concepts including DOM manipulation, APIs, animations, games and interactive user interfaces built without any frameworks. More projects are being added continuously.",
   },
+  {
+    id: 2,
+    title: "Ai Powered : Collabrative Code editer",
+    image: PROJECT_IMG_1,
+    github: "https://github.com/paramrai/ai_powered_coding_collab",
+    // demo: "https://ai-powered-coding-collab.vercel.app/",
+    tags: ["React", "Express.js", "MongoDB", "Node.Js"],
+    description:
+      "A collaborative code editor with AI-powered features including chat prompts for code assistance, AI code edits, and real-time group chat using Socket.io. Users can sign up, create projects, invite collaborators, and code together in real-time. Future updates will include video chat functionality.",
+  },
+  {
+    id: 3,
+    title: "Uber clone",
+    image: PROJECT_IMG_2,
+    github: "https://github.com/paramrai/uberClone",
+    // demo: "https://uber-like.vercel.app/",
+    tags: ["React", "Express.js", "MongoDB", "Node.Js"],
+    description:
+      "A full-stack Uber like web app built with React and MongoDB featuring user authentication for riders and captains, real-time ride booking, geolocation-based navigation, OTP verification system, and ride tracking functionality.",
+  },
+ 
 ];

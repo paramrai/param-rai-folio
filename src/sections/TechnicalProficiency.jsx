@@ -25,11 +25,17 @@ const TechnicalProficiency = () => {
         <div className="w-full lg:w-[60vw] mx-auto">
           <h4 className="section-title">Technical Proficiency</h4>
 
-          <p className="text-sm text-center mt-4 leading-6">
-            A versatile developer with hands-on expertise in modern
-            technologies, tools, and frameworks, dedicated to building
-            efficient, scalable, and user-centric solutions.
-          </p>
+          <div className="text-center mt-4">
+            <h5 className="text-base font-semibold text-black">The right technology. The right solution. Real business value.</h5>
+            <p className="text-sm mt-2 leading-6">
+              I use technology to solve problems, not just to add tools to my stack. With 6+ years of experience, I build
+              applications that are fast, secure, easy to maintain, and ready to grow with your business.
+            </p>
+            <p className="text-sm mt-2 leading-6">
+              Whether it's a responsive frontend, a reliable backend, or a complete full-stack application, I focus on
+              clean code, thoughtful architecture, and a great user experience.
+            </p>
+          </div>
         </div>
 
         <Tabs
